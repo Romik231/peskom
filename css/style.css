@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@font-face {
+  font-family: 'RifficFreeBold';
+  src: url("fonts/RifficFreeBold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Captureit';
+  src: url("fonts/Captureit.ttf") format("truetype"); }
+* {
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  font-family: Captureit, sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box; }
+
+header {
+  font-size: 1rem;
+  width: 100%;
+  display: flex;
+  height: 400px;
+  justify-content: space-between;
+  background-image: url("../img/bg_head.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  header .dark_mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 0;
+    opacity: 50%; }
+  header .logo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    line-height: 100px;
+    width: 300px;
+    height: 200px;
+    margin-left: 20px; }
+    header .logo .logo-img {
+      background-image: url("../img/logo.png");
+      width: 100px;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    header .logo .name-logo {
+      color: palegoldenrod;
+      font-size: 2rem;
+      font-family: RifficFreeBold, sans-serif; }
+  header .phones {
+    margin-top: 37px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column; }
+  header .phone-number {
+    display: flex;
+    color: palegoldenrod;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; }
+  header .menu {
+    width: 400px;
+    height: 100px;
+    margin-top: 37px;
+    z-index: 3;
+    font-size: 1.2rem;
+    overflow: hidden; }
+  header .menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between; }
+  header .menu ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: palegoldenrod;
+    padding: 5px;
+    font-family: Captureit, sans-serif; }
+  header .menu ul li a:hover {
+    background: palegoldenrod;
+    color: black;
+    transition: .5s;
+    border-radius: 15px; }
+
+.container {
+  box-sizing: border-box;
+  padding: 10px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .container .our-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; }
+    .container .our-works .photos {
+      width: 100%;
+      display: flex; }
+      .container .our-works .photos .photo {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between; }
+      .container .our-works .photos .photo img {
+        height: 300px;
+        border-radius: 5px; }
+  .container .paint-title {
+    color: aliceblue; }
+  .container .price {
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .container .price .paint-title {
+      color: red; }
+    .container .price .service {
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap; }
+    .container .price .service ul {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      list-style-type: none; }
+    .container .price .service ul > li {
+      margin-top: 10px;
+      margin-left: 10px;
+      font-size: 1em;
+      font-family: Montserrat, sans-serif; }
+    .container .price .service ul > li span {
+      font-weight: bold; }
+    .container .price .common-service {
+      border-radius: 10px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-left: lightgray;
+      padding: 20px;
+      box-sizing: border-box;
+      margin: 20px;
+      box-shadow: 10px -3px 9px 0px rgba(46, 50, 50, 0.41); }
+    .container .price .common-service:hover {
+      transition: .5s;
+      transform: translateY(-10px);
+      cursor: pointer; }
+    .container .price .common-service:hover p {
+      color: red; }
+    .container .price .common-service p {
+      margin-bottom: 10px;
+      position: absolute;
+      top: 10px;
+      font-size: 0.9em;
+      font-family: Captureit, sans-serif; }
+    .container .price .inf-for-clients {
+      font-family: Montserrat, sans-serif;
+      font-size: 1.5em;
+      color: red;
+      font-weight: bold; }
+    .container .price .option {
+      font-family: Montserrat, sans-serif;
+      font-size: 1.5rem; }
+  .container .contacts {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .container .contacts .maps {
+      font-size: 2em;
+      flex-direction: column;
+      font-family: Captureit, sans-serif;
+      display: flex;
+      width: 100%; }
+      .container .contacts .maps .location {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around; }
+        .container .contacts .maps .location .inform {
+          font-family: Montserrat, sans-serif;
+          font-size: 1.5rem; }
+      .container .contacts .maps .map-1 {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px; }
+  .container footer {
+    position: relative;
+    max-width: 100%;
+    margin-top: 20px; }
+    .container footer .footer {
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: row; }
+    .container footer .soc-icons {
+      max-width: 100%;
+      flex-direction: row;
+      display: flex;
+      justify-content: flex-end; }
+    .container footer .social a {
+      font-size: 3rem;
+      margin-left: 15px; }
+    .container footer .social a i {
+      color: #4c75a3; }
+    .container footer .social .fa-instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      color: white; }
+    .container footer .social a:visited {
+      color: black; }
+    .container footer .copyright {
+      position: absolute;
+      bottom: 0;
+      right: -3rem;
+      margin-left: 50px;
+      font-family: Captureit, sans-serif; }
+
+@media only screen and (max-width: 1024px) {
+  header .phone-number {
+    font-size: 1.2rem; }
+  header .menu {
+    display: flex;
+    justify-content: space-between; } }
+@media only screen and (max-width: 860px) {
+  header .logo {
+    width: 250px; }
+    header .logo .name-logo {
+      font-size: 1.4em; }
+    header .logo .logo-img {
+      width: 70px; }
+  header .phones {
+    font-size: 0.9rem; }
+  header .menu {
+    width: 330px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around; }
+
+  .container .our-works .photos .photo img {
+    height: 250px; } }
+@media only screen and (max-width: 730px) {
+  header {
+    height: 300px; }
+    header .logo {
+      width: 200px; }
+      header .logo .name-logo {
+        font-size: 1.2rem; }
+      header .logo .logo-img {
+        width: 70px; }
+    header .phone-number {
+      font-size: 0.7rem; }
+    header .menu {
+      width: 300px;
+      font-size: 0.8rem; }
+
+  .container .our-works .photos .photo img {
+    height: 200px; } }
+@media only screen and (max-width: 580px) {
+  header .logo {
+    width: 180px; }
+    header .logo .name-logo {
+      font-size: 1rem; }
+    header .logo .logo-img {
+      width: 70px; }
+  header .menu {
+    width: 180px; }
+    header .menu ul {
+      flex-direction: column;
+      justify-content: space-around; }
+
+  .container .our-works .photos .photo img {
+    height: 150px; } }
+@media only screen and (max-width: 500px) {
+  header {
+    height: 150px;
+    justify-content: space-between;
+    flex-grow: 2; }
+    header .logo {
+      width: 200px; }
+      header .logo .name-logo {
+        font-size: 10pt; }
+      header .logo .logo-img {
+        width: 70px; }
+    header .phones {
+      font-size: 6pt; }
+    header .menu {
+      margin-top: 10px;
+      width: 120px; }
+      header .menu ul {
+        flex-direction: column;
+        justify-content: space-around; }
+      header .menu ul > li {
+        font-size: 8pt; }
+
+  .container .our-works .photos .photo img {
+    height: 150px; } }
+@media only screen and (max-width: 435px) {
+  .container .our-works h2 {
+    font-size: 14pt;
+    margin-bottom: 10px; }
+  .container .our-works .photos .photo {
+    justify-content: center; }
+  .container .our-works .photos .photo img {
+    height: 200px; } }
+
+/*# sourceMappingURL=style.css.map */
